@@ -411,9 +411,7 @@ while len(term) > 1:
     except:
         pass
 
-if '69' in term:
-    print("Man sagt EINE Sache, und schon ist man Gay XXX... *Verzweiflung*")
-    steps.append("JOE MAMIBUS")
+
 
 index = 0
 
