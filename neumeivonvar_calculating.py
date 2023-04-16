@@ -1,5 +1,4 @@
 
-print("nichts3")
 
 class var:
 
