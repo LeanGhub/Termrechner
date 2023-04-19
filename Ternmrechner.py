@@ -344,16 +344,21 @@ while len(split_term) > 1:
 print(split_term) #
 print(number_adding) #
 
-if str("".join(split_term)).isnumeric():
-    end_result = int("".join(split_term)) + number_adding
+end_term = str(split_term)
+end_term = end_term.replace("[","")
+end_term = end_term.replace("]","")
+end_term = end_term.replace("'","")
+end_term = end_term.replace(","," ")
+
+if str(end_term).isnumeric():
+    end_result = int(end_term) + number_adding
 elif number_adding == 0:
     end_result = "".join(split_term)
 else:
-    sterm = "".join(split_term)
     if number_adding >= 0:
-        end_result = f"{sterm} + {number_adding}"
+        end_result = f"{end_term} + {number_adding}"
     else:
-        end_result= f"{sterm} {number_adding}"
+        end_result= f"{end_term} {number_adding}"
 
     
 print(f"Endergebniss: {end_result}")
