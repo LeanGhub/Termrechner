@@ -1,6 +1,4 @@
 
-
-
 def add(left, right):
 
     number_left = []
